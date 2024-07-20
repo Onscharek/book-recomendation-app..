@@ -1,0 +1,116 @@
+.button {
+    --main-focus: #974600;
+    --font-color: #622305;
+    --bg-color-sub: #c2895a;
+    --bg-color: #d9aa84;
+    --main-color: #622305;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  5px 5px 5px #160a01;
+
+  }
+  .btns{
+
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+
+  .desc{
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: rgba(217, 170, 132, 0.782);
+    border-radius: 40px;
+    box-shadow:  6px 6px 6px #160a01;
+    margin-bottom: 5%;
+  }
+  .desctitle{
+    font-size: 3rem; /* Adjust font size */
+    text-shadow: 3px 3px 4px #160a01; /* Optional: Text shadow */
+  color: #d9aa84;
+  font-family: 'Times New Roman', Times, serif; /* Font stack for h2 */
+
+  }
+
+
+.bimg{
+   width: 25%;
+      position: fixed;
+      z-index: -1; 
+      filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.747)); 
+
+top:0;
+margin-top:6%;
+margin-left: 12%;
+  }
+.infotitle{
+  font-size: 3rem; /* Adjust font size */
+  text-shadow: 3px 3px 4px #160a01; /* Optional: Text shadow */
+color: #d9aa84;
+font-family: 'Times New Roman', Times, serif; /* Font stack for h2 */
+
+}
+.info{
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: rgba(217, 170, 132, 0.338);
+  border-radius: 40px;
+  box-shadow:  6px 6px 6px #160a01;
+  margin-bottom: 5%;
+  z-index: -1; 
+
+
+}

@@ -1,0 +1,109 @@
+/* Overall container styling */
+.container { 
+   display: flex;
+    justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Grid styling */
+.grid {
+  margin-left: 10%;
+
+  display: inline-grid;
+  grid-template-columns: repeat(10, 45px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 7px;
+  margin-bottom: 0px;
+}
+
+/* Individual cell styling */
+.cell {
+  box-shadow: 10px 10px 10px black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6c3a10d7;
+  color: #000000;
+  cursor: pointer;
+  background-color: #d7945dd7;
+  font-size:18px;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.cell:hover {
+  background-color: #865125d7;
+}
+
+/* Highlighting selected and found cells */
+.cell.selected {
+  background-color: #edb78ad7;
+  color: #000000d7;
+}
+
+.cell.found {
+  background-color: #865125d7;
+  color: #ffffff;
+}
+
+.cell.invalid {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Words list styling */
+.words-list {
+  margin-top: -50px;
+  position: fixed;
+  margin-right: 53%;
+  background-color: #d7945dd7;
+  padding: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.words-list h2 {
+  font-size: 24px;
+  color: #000000d7;
+}
+
+.words-list ul {
+  list-style: none;
+  color: #000000b7;
+  padding: 0;
+  margin: 0;
+}
+
+.words-list li {
+  font-size: 16px;
+  padding: 5px 0;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.words-list li.found {
+  text-decoration: line-through;
+  color: rgb(231, 230, 230);
+}
+
+/* Reset button styling */
+.reset-button {
+  border: none;
+  color: black;
+  background-color: #d7945dd7;;
+  cursor: pointer;
+  margin-top: -5%;
+
+  margin-left: 4%;
+  filter: drop-shadow(10px 10px 10px black);
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.reset-button:hover {
+  background-color: #d7945dd7;
+}

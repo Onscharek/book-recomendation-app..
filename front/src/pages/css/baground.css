@@ -1,0 +1,84 @@
+                  /*  the box  */
+                  .square-box {
+                    position: fixed; /* Ensure it stays in place even when scrolling */
+                    top: 0; /* Position it at the bottom */
+                    left: 0; /* Position it on the left side */
+                    width: 30%; /* Set the width of the square */
+                    height: 50%; /* Set the height of the square */
+                    background: linear-gradient(to right,#dda77c , transparent);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+                    z-index: -1; /* Ensure it is displayed behind other content */
+                    border-bottom-right-radius: 500px; /* Round only the top-left corner */
+                  }
+                  
+                  .square-box2 {
+                    position: fixed; 
+                    bottom: 0; 
+                    right: 0; 
+                    width: 30%; 
+                    height: 50%;
+                    background: linear-gradient(to right,#dda77c , transparent);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+                    z-index: -1; 
+                    border-top-left-radius: 500px; 
+                  }
+                  
+                                
+                  .square-box3 {
+                    position: fixed; 
+                    bottom: 0; 
+                    right: 0; 
+                    width: 40%; 
+                    height: 60%;
+                    background: linear-gradient(to right,#b9733a , transparent);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+                    z-index: -1; 
+                    border-top-left-radius: 500px; 
+                  }
+
+
+
+
+
+
+                  .square-box4 {
+                    position: fixed; /* Ensure it stays in place even when scrolling */
+                    top: 0; /* Position it at the bottom */
+                    left: 0; /* Position it on the left side */
+                    width: 40%; /* Set the width of the square */
+                    height: 60%; /* Set the height of the square */
+                    background: linear-gradient(to right,#b9733a , transparent);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+                    z-index: -1; /* Ensure it is displayed behind other content */
+                    border-bottom-right-radius: 500px; /* Round only the top-left corner */
+                  }
+
+
+
+
+                  
+
+                  .books {
+                    position: fixed;
+                    top: 0; /* Position it at the bottom */
+                    left: 0; /* Position it on the left side */
+                    z-index: -1; /* Ensure it is displayed behind other content */
+margin-left:10%;
+                    filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.7)); }
+
+
+
+                                  /* stars
+                                   */
+                                   .custom-rate .ant-rate-star-full .ant-rate-star-second {
+                                    color: rgb(243, 144, 6);
+                                  }
+                                  
+                                  .custom-rate .ant-rate-star-full .ant-rate-star-first {
+                                    color: rgb(243, 144, 6);
+                                  }
+                                  
+                                  .custom-rate .ant-rate-star-zero .ant-rate-star-first, 
+                                  .custom-rate .ant-rate-star-zero .ant-rate-star-second {
+                                    color: rgba(128, 128, 128, 0.537);
+                                  }

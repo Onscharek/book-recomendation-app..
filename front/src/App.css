@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+.bag{
+  z-index: -1; 
+  position: fixed; 
+top: 0;
+left: 0;
+opacity: 0.8; 
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html,body 
+
+.App * {font-family: 'Pacifico', cursive;}
+
+
+
+
+

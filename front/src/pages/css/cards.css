@@ -1,0 +1,163 @@
+            /* movies display
+                      cards */
+                      .flip-card {
+                        background-color: transparent;
+                        width: 18rem;
+                        height: 35rem;
+                        perspective: 1000px;
+                        font-family: sans-serif;
+                      }
+                      
+                      .title {
+                        font-size: 1.5em;
+                        font-weight: 900;
+                        text-align: center;
+                        margin: 0;
+                        
+                      }
+                      
+                      .flip-card-inner {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        transform-style: preserve-3d;
+                      }
+                      
+                      .flip-card:hover .flip-card-inner {
+                        transform: rotateY(180deg);
+                      }
+                      
+                      .flip-card-front, .flip-card-back {
+                      filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.7)); 
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        border: 1px solid #d9aa84;
+                        border-radius: 1rem;
+                        border-top-right-radius: 50rem;
+                        margin-top:30%; 
+                        margin-bottom:50%; 
+                    
+                    
+                      }
+                      
+                      .flip-card-front {
+                        background: linear-gradient(120deg, bisque 60%, #d9aa84 88%,
+                        #d9aa84 40%, #d9aa84 48%);
+                        color: #000000;
+                      }
+                      
+                      .flip-card-back {
+                        background: linear-gradient(120deg, #c88f60 30%, #d7ac88 88%,
+                           bisque 40%, #d9aa84 78%);
+                        color: rgb(0, 0, 0);
+                        transform: rotateY(180deg);
+                      }
+                    
+                    .cardimg{
+                      padding: 8%;
+                      height: 450px;
+                      filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.7)); 
+                    border-bottom-right-radius: 50rem; /* Round only the top-left corner */
+                    
+                    }
+                    #books {
+                      display: flex;
+                      flex-wrap: wrap;
+                      gap: 60px;
+                      justify-content: center;
+                      align-items: center;
+                    }
+                    
+                    .cardss {
+                        transition: 0.3s;
+                    }
+                    
+                    .genra{margin-top: 7%;
+                      font-size: 4rem; /* Adjust font size */
+                      font-weight: bold; /* Font weight */
+                      text-shadow: 2px 2px 4px #422e1d; /* Optional: Text shadow */
+                    color: #d9aa84;
+                    font-family: 'Times New Roman', Times, serif; /* Font stack for h2 */
+                    }
+                                                           /* botton */
+                    
+                    .scene {
+                      width: 10rem;
+                      justify-content: center;
+                      align-items: center;
+                      text-align: center;
+                     }
+                     .cube {
+                      color: #d9aa84;
+                      cursor: pointer;
+                      font-family: 'Roboto', sans-serif;
+                      transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+                      transform-style: preserve-3d;
+                      transform-origin: 100% 50%;
+                      width: 8em;
+                      height: 3em;
+                     }
+                     
+                     .cube:hover {
+                      transform: rotateX(-90deg);
+                     }
+                     
+                     .side {
+                      position: absolute;
+                      height: 3em;
+                      display: inline-block;
+                      width: 8em;
+                      text-align: center;
+                      text-transform: uppercase;
+                      padding-top: 0.8em;
+                     }
+                     
+                     .top {
+                      background: wheat;
+                      color: #222229;
+                      transform: rotateX(90deg) translate3d(0, 0, 2em);
+                      box-shadow: inset  0 0 5px #fff;
+                     }
+                     
+                     .front {
+                      background: #d9aa84;
+                      color: #000000;
+                      box-shadow: inset  0 0 5px #1a0c01;
+                      transform: translate3d(0, 0, 2em);
+                     }
+                    
+
+            /* like btn */
+            .icon {
+              transition: transform 0.3s, color 0.3s;
+            }
+            
+            .plus-icon:hover {
+              color: rgb(212, 113, 0); /* Change to your desired color */
+              transform: scale(1.5); /* Zoom in effect */
+              cursor: pointer;
+            }
+            
+            .check-icon:hover {
+              color: rgb(2, 105, 2); /* Change to your desired color */
+              transform: scale(1.5); /* Zoom in effect */
+              cursor: pointer;
+            }
+            
+            .heart-icon:hover {
+              color: rgb(220, 7, 7); /* Change to your desired color */
+              transform: scale(1.5); /* Zoom in effect */
+              cursor:pointer ;
+            }
+            
+
+
+

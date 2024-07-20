@@ -1,0 +1,191 @@
+/* Base styles */
+.flipp {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+}
+
+.flipp {
+  
+  height: 50%;
+  margin: 2% auto;
+  margin-left: 28%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 90%;
+
+}
+
+
+
+
+.flipp::before {
+  content: '';
+  
+  inset: 0;
+  position: fixed;
+  pointer-events: none;
+}
+
+
+.game-block {
+
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  cursor: pointer;
+  width: 150px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+  box-shadow: 10px 10px 10px black;
+}
+
+.card.matched {
+  transform: rotateY(180deg);
+}
+
+.card img,
+.card svg {
+  width: 50%;
+  backface-visibility: hidden;
+  
+  pointer-events: none;
+}
+
+.card img {
+  transform: rotateY(0deg);
+}
+
+.card.matched img {
+  transform: rotateY(180deg);
+}
+
+.card svg {
+  width: 100px;
+  height: 50px;
+  opacity: 0.3;
+}
+
+button {
+  border: none;
+  color: black;
+  background-color: #d9aa84d7;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+
+
+
+button.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+margin-left: 50%;
+  border-radius: 50%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .game-block {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .flipp {
+    height: auto;
+    margin: 1% auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .game-block {
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 120px;
+    height: 72px;
+  }
+
+  .card img,
+  .card svg {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .game-block {
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100px;
+    height: 60px;
+  }
+
+  .card img,
+  .card svg {
+    width: 30%;
+  }
+
+  button.start-game {
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button.start-game {
+    padding: 0.75rem 1rem;
+    font-size: 18px;
+  }
+
+  button.reset {
+    height: 60px;
+    width: 60px;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
